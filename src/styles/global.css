@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Hack';
+  src: url(/assets/fonts/Hack-NF.ttf);
+  display: swap;
+}
+
+* {
+  font-family: 'Hack', monospace;
+}
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e252e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* background: #ebdbb2; */
+  /* background: #FF47DA; */
+  background: #E9DF00;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8037;
+}
+
+.blur-text {
+  animation: blurAnimation 0.1s infinite alternate;
+}
+
+@keyframes blurAnimation {
+  0% { text-shadow: 0 0 0 transparent; }
+  100% { text-shadow: 10px 10px 15px  #01FDF6; }
+}
+
+.jumble {
+  animation: jumbleAnimation 2s infinite alternate;
+}
+
+@keyframes jumbleAnimation {
+  0% { letter-spacing: 0; }
+  100% { letter-spacing: 5px; }
+}
+
+.color-change {
+  animation: colorChangeAnimation 0.5s infinite alternate;
+}
+
+@keyframes colorChangeAnimation {
+  0% { color: black; }
+  50% { color: #FF47DA; }
+  100% { color: black; }
+}
+
+.shake {
+  animation: shakeAnimation 0.1s infinite alternate;
+}
+
+.shake-y {
+  animation: shakeAnimationY 0.1s infinite alternate;
+}
+
+@keyframes shakeAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-5px); }
+}
+
+@keyframes shakeAnimationY {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+.wobble {
+  animation: wobbleAnimation 1s infinite alternate;
+}
+
+@keyframes wobbleAnimation {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.opacity-flash {
+  animation: opacityFlashAnimation 0.2s infinite alternate;
+}
+
+@keyframes opacityFlashAnimation {
+  0% { opacity: 1; }
+  100% { opacity: 0.1; }
+}
