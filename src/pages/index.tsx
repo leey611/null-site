@@ -49,7 +49,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
       }, 500)
      
     }
-    console.log('length', history.length)
+    //console.log('length', history.length)
     if (answerCount > 30 && isStarted) {
       clearInterval(intervalId)
       setHistory(bin['ending']())
