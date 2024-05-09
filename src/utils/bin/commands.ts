@@ -4,8 +4,8 @@ import * as bin from './index';
 import config from '../../../config.json';
 
 export const start = async (args: string[], isStarted: boolean): Promise<string> => {
-  console.log('commands ts', isStarted)
-  console.log('args', args)
+  //console.log('commands ts', isStarted)
+  //console.log('args', args)
   return getRandomQuestion(sensitiveQuestions)
 };
 

@@ -49,11 +49,11 @@ export const shell = async (
       `shell: command not found: ${args[0]}. Try 'help' to get started.`,
     );
   } else {
-    console.log('shell', isStarted)
+    //console.log('shell', isStarted)
     const output = await bin[args[0]](args.slice(1), isStarted);
     setHistory(output);
     test.push(output)
   }
-  console.log(test)
+  //console.log(test)
   setCommand('');
 };
