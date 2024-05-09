@@ -251,7 +251,9 @@ export let sensitiveQuestions: string[] = [
   "Would you rather 1) have a job you hate that pays well or 2) a job you love that pays poorly?",
   "Would you rather be 1) stuck in a job you hate for the rest of your life but have a loving family, or 2) have a dream job but be alone?",
   "You're feeling overwhelmed with stress. Do you: a) Practice meditation to manage stress? b) Seek professional therapy? c) Engage in physical activities?",
-  "You're facing a major decision about your education. Do you: a) Choose a practical major with good job prospects? b) Pursue your passion even if it's less financially stable? c) Take a gap year to explore different options?"
+  "You're facing a major decision about your education. Do you: a) Choose a practical major with good job prospects? b) Pursue your passion even if it's less financially stable? c) Take a gap year to explore different options?",
+  "You're sick of your full-time job and want to find a new passion by pursuing another degree, transitioning to other career paths, or starting a company, which also means sacrificing your current stable life. How do you decide?",
+  "You're trying to recover from some pain or grieving, back to normal life. Instead of hurt or fully healed, you're feeling numb and confused. How would you describe the state?"
 ];
 
 export function getRandomTextAnimation(): string {
